@@ -15,7 +15,7 @@ def wholesaleCost(copies: Int): Double = {
   val shippingPerCopy = 0.75
   
   val discountedPrice = bookPrice * (1 - discountRate)
-  val totalShippingCost = if (copies <= 50) shippingBaseCost else shippingBaseCost + (copies - 50) * shippingPerCopy
+  val totalShippingCost = if (copies <= 50) shippingBaseCost * copies else 50 * shippingBaseCost + (copies - 50) * shippingPerCopy
   
   discountedPrice * copies + totalShippingCost
 }
