@@ -16,6 +16,6 @@ object InventoryManagement {
         val itemNames = Array("Mangoes", "Banana", "Apples", "Grapes")
         val itemQuantity = Array(9, 5, 6, 15)
 
-      displayInventory(itemNames, itemQuantity)
+        displayInventory(itemNames, itemQuantity)
     }
 }
